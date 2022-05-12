@@ -1,0 +1,14 @@
+VIM="nvim"
+
+export GOPATH=$HOME/go
+export GIT_EDITOR=$VIM
+export DOTFILES=$HOME/.dotfiles
+
+addToPathFront $HOME/.local/.npm-global/bin
+addToPathFront $HOME/.local/n/bin/
+addToPathFront $HOME/.local/go/bin
+addToPathFront $HOME/go/bin
+
+validateYaml() {
+    python -c 'import yaml,sys;yaml.safe_load(sys.stdin)' < $1
+}
