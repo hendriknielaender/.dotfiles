@@ -1,4 +1,4 @@
-local sumneko_root_path = "/usr/local/Cellar/lua-language-server/2.6.7"
+local sumneko_root_path = "/usr/local/Cellar/lua-language-server/3.2.2"
 local sumneko_binary = sumneko_root_path .. "/bin/lua-language-server"
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -26,12 +26,15 @@ cmp.setup({
 
 			-- For `ultisnips` user.
 			-- vim.fn["UltiSnips#Anon"](args.body)
-		ed,
-	},
+    end,
+  },
 	mapping = {
 		["<C-u>"] = cmp.mapping.scroll_docs(-4),
 		["<C-d>"] = cmp.mapping.scroll_docs(4),
 		["<C-Space>"] = cmp.mapping.complete(),
+		["<cr>"] = cmp.mapping.confirm({select = true}),
+        ["<s-tab>"] = cmp.mapping.select_prev_item(),
+        ["<tab>"] = cmp.mapping.select_next_item(),
 	},
 
 	formatting = {

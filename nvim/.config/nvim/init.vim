@@ -38,9 +38,8 @@ Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
-Plu 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/nvim-cmp'
 Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
-Plug 'onsails/lspkind-nvim'
 Plug 'onsails/lspkind-nvim'
 " Plug 'github/copilot.vim'
 Plug 'nvim-lua/lsp_extensions.nvim'
@@ -75,6 +74,13 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
+" Harpoon 
+Plug 'nvim-lua/plenary.nvim' " don't forget to add this one if you don't have it yet!
+Plug 'ThePrimeagen/harpoon'
+
+" Refactoring 
+Plug 'ThePrimeagen/refactoring.nvim'
+
 " Golang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'darrikonn/vim-gofmt', { 'do': ':GoUpdateBinaries' }
@@ -83,6 +89,9 @@ Plug 'darrikonn/vim-gofmt', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
+
+" Git Worktree
+Plug 'ThePrimeagen/git-worktree.nvim'
 
 call plug#end()
 " select the color scheme
@@ -94,4 +103,8 @@ nnoremap <leader>pv :Vex<CR>
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <C-j> :cnext<CR>
 
-lua require("lsp-config")
+lua require("hndrk")
+lua require'nvim-treesitter.configs'.setup { highlight = { enable = true }, incremental_selection = { enable = true }, textobjects = { enable = true }}
+
+nnoremap <Leader>+ :vertical resize +5<CR>
+nnoremap <Leader>- :vertical resize -5<CR>
