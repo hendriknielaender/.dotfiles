@@ -49,10 +49,11 @@ M.search_dotfiles = function()
 		cwd = vim.env.DOTFILES,
 		hidden = true,
 	})
-end
+end  
 
 local function set_background(content)
-	vim.fn.system("dconf write /org/mate/desktop/background/picture-filename \"'" .. content .. "'\"")
+  print("Set iTerm2 Background Image")
+  vim.fn.system("osascript iterm_set_bg.scpt " .. content .. "")
 end
 
 local function select_background(prompt_bufnr, map)
@@ -90,7 +91,7 @@ local function image_selector(prompt, cwd)
 	end
 end
 
-M.anime_selector = image_selector("< Anime Bobs > ", "~/personal/anime")
+M.anime_selector = image_selector("< Anime Bobs > ", "~/pictures/anime")
 
 local function refactor(prompt_bufnr)
 	local content = require("telescope.actions.state").get_selected_entry(prompt_bufnr)
