@@ -53,7 +53,7 @@ end
 
 local function set_background(content)
   print("Set iTerm2 Background Image")
-  vim.fn.system("osascript iterm_set_bg.scpt " .. content .. "")
+  vim.fn.system("osascript ~/iterm_set_bg.scpt " .. content .. "")
 end
 
 local function select_background(prompt_bufnr, map)
