@@ -12,11 +12,21 @@ vnoremap("J", ":m '>+1<CR>gv=gv")
 vnoremap("K", ":m '<-2<CR>gv=gv")
 
 nnoremap("Y", "yg$")
-nnoremap("n", "nzzzv")
-nnoremap("N", "Nzzzv")
 nnoremap("J", "mzJ`z")
+
+
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
+nnoremap("n", "nzzzv")
+nnoremap("N", "Nzzzv")
+
+
+nnoremap("<leader>vwm", function()
+    require("vim-with-me").StartVimWithMe()
+end)
+nnoremap("<leader>svwm", function()
+    require("vim-with-me").StopVimWithMe()
+end)
 
 -- greatest remap ever
 xnoremap("<leader>p", "\"_dP")
@@ -36,6 +46,9 @@ inoremap("<C-c>", "<Esc>")
 
 nnoremap("Q", "<nop>")
 nnoremap("<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+nnoremap("<leader>f", function()
+    vim.lsp.buf.format()
+end)
 
 nnoremap("<C-k>", "<cmd>cnext<CR>zz")
 nnoremap("<C-j>", "<cmd>cprev<CR>zz")

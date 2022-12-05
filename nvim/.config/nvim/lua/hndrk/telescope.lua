@@ -19,6 +19,7 @@ require("telescope").setup({
 			i = {
 				["<C-x>"] = false,
 				["<C-q>"] = actions.send_to_qflist,
+                ["<CR>"] = actions.select_default,
 			},
 		},
 	},
@@ -57,13 +58,12 @@ end
 
 local function set_background(content)
     print(content)
-	vim.fn.system("feh --bg-fill " .. content .. "'\"")
+	vim.fn.system("feh --bg-max " .. content)
 end
 
 local function select_background(prompt_bufnr, map)
 	local function set_the_background(close)
 		local content = require("telescope.actions.state").get_selected_entry(prompt_bufnr)
-        print(vim.inspect(content))
 		set_background(content.cwd .. "/" .. content.value)
 		if close then
 			require("telescope.actions").close(prompt_bufnr)
@@ -225,5 +225,4 @@ M.dev = function(opts)
 end
 
 return M
-
 
