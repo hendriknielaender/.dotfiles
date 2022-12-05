@@ -1,6 +1,5 @@
 require("hndrk.set")
 require("hndrk.packer")
-require("hndrk.neogit")
 require("hndrk.debugger")
 
 local augroup = vim.api.nvim_create_augroup
