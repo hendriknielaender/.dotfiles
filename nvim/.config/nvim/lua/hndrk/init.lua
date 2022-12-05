@@ -1,13 +1,15 @@
 require("hndrk.set")
 require("hndrk.packer")
-require("hndrk.neogit")
-require("hndrk.debugger")
 
 local augroup = vim.api.nvim_create_augroup
 HndrkGroup = augroup('Hndrk', {})
 
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlightYank', {})
+
+function R(name)
+    require("plenary.reload").reload_module(name)
+end
 
 autocmd('TextYankPost', {
     group = yank_group,
@@ -38,3 +40,50 @@ vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
 
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
+
+-- setup with some options
+require("nvim-tree").setup({
+  sort_by = "case_sensitive",
+  view = {
+    adaptive_size = true,
+    mappings = {
+      list = {
+        { key = "u", action = "dir_up" },
+      },
+    },
+  },
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
+})
+
+
+--[[
+vim.cmd('sign define bar linehl=ColorColumn')
+local function barify()
+    -- vim.fn.clearmatches()
+    vim.cmd('sign unplace *')
+    local cur_line = vim.fn.line('.')
+    local jump = 5
+    local offs = jump * 3
+    for line = cur_line - offs, cur_line + offs, jump do
+        if line ~= cur_line and line > 0 then
+            -- vim.fn.matchaddpos('ColorColumn', {line})
+            vim.cmd(string.format(
+            'sign place %d name=bar line=%d',
+            line, line))
+        end
+    end
+end
+vim.api.nvim_create_autocmd(
+{ "CursorMoved", "CursorMovedI" }, { callback = barify })
+--]]

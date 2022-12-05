@@ -1,5 +1,9 @@
 vim.g.hndrk_colorscheme = "tokyonight"
 
+require("catppuccin").setup({
+	transparent_background = false,
+});
+
 function ColorMyPencils()
     vim.g.gruvbox_contrast_dark = 'hard'
     vim.g.tokyonight_transparent_sidebar = true
@@ -19,7 +23,7 @@ function ColorMyPencils()
 
     hl("ColorColumn", {
         ctermbg = 0,
-        bg = "#555555",
+        bg = "#2B79A0",
     })
 
     hl("CursorLineNR", {
