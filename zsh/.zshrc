@@ -13,8 +13,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh_profile
 
-alias luamake=/home/hendrik/personal/lua-language-server/3rd/luamake/luamake
-
 TMUX_CONFIG="~/.config/tmux/.tmux.conf"
 
 # TMUX Related Aliases
@@ -22,3 +20,5 @@ alias                                 \
   tn="tmux -u -f $TMUX_CONFIG new"    \
   ta="tmux -u -f $TMUX_CONFIG attach" \
   tt="nvim $TMUX_CONFIG"
+
+alias colorscheme="~/bin/colorscheme"
