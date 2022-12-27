@@ -25,10 +25,19 @@ return require('packer').startup(function(use)
   use ('ellisonleao/gruvbox.nvim')
   use { "catppuccin/nvim", as = "catppuccin" }
 
+  use ('nvim-lualine/lualine.nvim')
+
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
+  -- Git
+  use {
+  'lewis6991/gitsigns.nvim',
+      config = function()
+        require('gitsigns').setup()
+      end
+  }
   use('tpope/vim-fugitive')
 
   use {
@@ -55,5 +64,16 @@ return require('packer').startup(function(use)
 
   use("folke/zen-mode.nvim")
   use("github/copilot.vim")
+
+  use('ThePrimeagen/vim-be-good')
+
+  use {
+      'nvim-tree/nvim-tree.lua',
+      requires = {
+        'nvim-tree/nvim-web-devicons',
+      },
+      tag = 'nightly'
+  }
+  use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
 
 end)
