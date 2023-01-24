@@ -65,7 +65,7 @@ return require('packer').startup(function(use)
   use("folke/zen-mode.nvim")
   use("github/copilot.vim")
 
-  use('ThePrimeagen/vim-be-good')
+  use('ThePrimeagen/vim-with-me')
 
   use {
       'nvim-tree/nvim-tree.lua',
