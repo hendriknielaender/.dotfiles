@@ -1,5 +1,7 @@
 # .dotfiles
-                        
+
+![preview-rose-pine](preview.png "rose-pine theme")
+
 |                     |                                                                           |
 |---------------------|---------------------------------------------------------------------------|
 |Shell:               |[zsh](https://www.zsh.org/) + [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)|
