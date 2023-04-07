@@ -27,8 +27,6 @@ colorscheme tokyonight
 
 - `lsp-zero` manage [language servers](https://github.com/VonHeikemen/lsp-zero.nvim)
 - `telescope.nvim` a highly extendable [fuzzy finder](https://github.com/nvim-telescope/telescope.nvim)
-- `nvim-tree` [file explorer](https://github.com/nvim-tree/nvim-tree.lua)
-- `barbar.nvim` is a [tabline plugin](https://github.com/romgrk/barbar.nvim)
 - `nvim-treesitter` [parsing library](https://github.com/nvim-treesitter/nvim-treesitter)
 - `theprimeagen/harpoon` [buffer navigation](https://github.com/ThePrimeagen/harpoon)
 - `undotree` visualizes the [undo history](https://github.com/mbbill/undotree)
