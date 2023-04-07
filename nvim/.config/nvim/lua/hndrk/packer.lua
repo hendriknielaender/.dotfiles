@@ -67,13 +67,4 @@ return require('packer').startup(function(use)
 
   use('ThePrimeagen/vim-with-me')
 
-  use {
-      'nvim-tree/nvim-tree.lua',
-      requires = {
-        'nvim-tree/nvim-web-devicons',
-      },
-      tag = 'nightly'
-  }
-  use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
-
 end)
