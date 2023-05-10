@@ -10,7 +10,7 @@ shell:
   args:
     - -l
     - -c
-    - "tmux"
+    - "tmux attach || tmux"
 
 live_config_reload: true
 strip_formatting: true
@@ -29,6 +29,11 @@ window:
 
   # Make background slightly transparent
   opacity: 0.8
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 5000
 
 font:
   normal:
