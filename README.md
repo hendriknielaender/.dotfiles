@@ -9,6 +9,12 @@
 |Terminal:            |[alacritty](https://github.com/alacritty/alacritty)                        |
 |Terminal-Multiplexer:|[tmux](https://github.com/tmux/tmux)                                       |
 
+**Optional**, but highly recommended:
+
+* [fzf](https://github.com/junegunn/fzf)
+* [ripgrep](https://github.com/BurntSushi/ripgrep)
+* [jq](https://github.com/stedolan/jq)
+
 ## Themes
 
 |                                                         |                                                 |
