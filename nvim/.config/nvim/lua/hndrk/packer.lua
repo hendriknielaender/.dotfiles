@@ -67,4 +67,5 @@ return require('packer').startup(function(use)
 
   use('ThePrimeagen/vim-with-me')
 
+  use('ziglang/zig.vim')
 end)
