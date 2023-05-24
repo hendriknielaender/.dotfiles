@@ -6,6 +6,7 @@ lsp.ensure_installed({
   'tsserver',
   'lua_ls',
   'rust_analyzer',
+  'zls',
 })
 
 -- Fix Undefined global 'vim'
