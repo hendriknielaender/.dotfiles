@@ -68,4 +68,7 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/vim-with-me')
 
   use('ziglang/zig.vim')
+
+  use ('ray-x/go.nvim')
+  use ('ray-x/guihua.lua') -- recommended if need floating window support
 end)
