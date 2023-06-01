@@ -6,7 +6,7 @@ This repository contains my personal dotfiles, including preconfigured settings 
 It's optimized for a seamless development experience in TypeScript, Rust, Go and Zig. It includes a curated selection of plugins, key mappings, and customizations to enhance productivity and streamline coding workflows.
 
 ## Vim re-maps
-![CHEATSHEET.md](CHEATSHEET.md "custom vim remaps")
+[CHEATSHEET.md](CHEATSHEET.md)
 
 ![preview-rose-pine](rose-pine.png "rose-pine theme")
 
