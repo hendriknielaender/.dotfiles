@@ -5,6 +5,16 @@ This repository contains my personal dotfiles, including preconfigured settings 
 ### Vim re-maps
 [CHEATSHEET.md](CHEATSHEET.md)
 
+### Requirements
+- Ubuntu/Debian: `sudo apt-get install stow`
+- Fedora: `sudo dnf install stow`
+- Arch Linux/Manjaro: `sudo pacman -S stow`
+- macOS (using Homebrew): `brew install stow`
+
+### Getting started
+```shell
+stow -d ~/.dotfiles/ alacritty nvim zsh tmux 
+```
 
 ### Preview
 ![preview-rose-pine](rose-pine.png "rose-pine theme")
