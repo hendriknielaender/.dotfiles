@@ -1,5 +1,5 @@
 require("hndrk.set")
-require("hndrk.packer")
+require("hndrk.lazy")
 
 local augroup = vim.api.nvim_create_augroup
 HndrkGroup = augroup('Hndrk', {})
@@ -21,6 +21,7 @@ autocmd('TextYankPost', {
         })
     end,
 })
+
 
 autocmd({"BufWritePre"}, {
     group = HndrkGroup,
