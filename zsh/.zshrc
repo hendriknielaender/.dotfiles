@@ -13,6 +13,15 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh_profile
 
+# Git Aliases
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gco="git checkout"
+alias gb="git branch"
+alias gpl="git pull"
+alias gps="git push"
+
 TMUX_CONFIG="~/.config/tmux/.tmux.conf"
 
 # TMUX Related Aliases
@@ -22,3 +31,5 @@ alias                                 \
   tt="nvim $TMUX_CONFIG"
 
 alias colorscheme="~/bin/colorscheme"
+
+alias vi="nvim"
