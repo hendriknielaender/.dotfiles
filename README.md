@@ -13,7 +13,7 @@ This repository contains my personal dotfiles, including preconfigured settings 
 
 ### Getting started
 ```shell
-stow -d ~/.dotfiles/ alacritty nvim zsh tmux 
+stow --target ~/.config .
 ```
 
 ### Preview
