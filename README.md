@@ -5,12 +5,6 @@ This repository contains my personal dotfiles, including preconfigured settings 
 ### Vim re-maps
 [CHEATSHEET.md](CHEATSHEET.md)
 
-### Requirements
-- Ubuntu/Debian: `sudo apt-get install stow`
-- Fedora: `sudo dnf install stow`
-- Arch Linux/Manjaro: `sudo pacman -S stow`
-- macOS (using Homebrew): `brew install stow`
-
 ### Getting started
 ```shell
 stow --target ~/.config .
