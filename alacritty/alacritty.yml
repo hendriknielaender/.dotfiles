@@ -10,7 +10,8 @@ shell:
   args:
     - -l
     - -c
-    - "tmux attach || tmux"
+    - zellij attach --index 0 || zellij
+    # - "tmux attach || tmux"
 
 live_config_reload: true
 strip_formatting: true
