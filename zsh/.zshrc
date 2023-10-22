@@ -2,34 +2,49 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh_profile
 
+# zsh Aliases
+alias sc="source $HOME/.zshrc"
+
 # Git Aliases
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
+alias gcb="git checkout -B"
 alias gco="git checkout"
 alias gb="git branch"
 alias gpl="git pull"
 alias gps="git push"
 
-TMUX_CONFIG="~/.config/tmux/.tmux.conf"
+alias ls="ls --color -la -h"
+alias grep="grep -n --color"
+alias vi="nvim"
+alias colorscheme="~/bin/colorscheme"
 
 # TMUX Related Aliases
+TMUX_CONFIG="~/.config/tmux/.tmux.conf"
+
 alias                                 \
   tn="tmux -u -f $TMUX_CONFIG new"    \
   ta="tmux -u -f $TMUX_CONFIG attach" \
   tt="nvim $TMUX_CONFIG"
 
-alias colorscheme="~/bin/colorscheme"
+# Go development
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
-alias vi="nvim"
+test -d "${GOPATH}" || mkdir "${GOPATH}"
+test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
+
+# Zig development
+# export PATH=$PATH:~/zig
+export PATH="$HOME/.zvm/current:$PATH"
+
+# starship.rs
+export STARSHIP_CONFIG="~/.config/starship/starship.toml"
+eval "$(starship init zsh)"
