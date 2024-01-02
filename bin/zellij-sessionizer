@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+# Default paths if no arguments are provided
+default_paths=("~/personal")
+
+# Use provided paths or default if none are provided
+paths=("${@:-${default_paths[@]}}")
+
+# Exit if no directories are available to search
+if [ ${#paths[@]} -eq 0 ]; then
+    echo "No paths are available for searching. Exiting."
+    exit 0
+fi
+
+# Function to find a directory using either fd or find
+find_directory() {
+    if [ -x "$(command -v fd)" ]; then
+        fd . "${paths[@]}" --min-depth 1 --max-depth 2 --type d | fzf
+    else
+        find "${paths[@]}" -mindepth 1 -maxdepth 2 -type d | fzf
+    fi
+}
+
+# Select a path using fd or find
+selected_path=$(find_directory)
+
+# Exit if no path is selected
+if [[ -z $selected_path ]]; then
+    exit 0
+fi
+
+# Generate session name, replacing "." with "_"
+session_name=$(basename "$selected_path" | tr . _)
+
+# If Zellij is not running, create or attach to a session
+if [[ -z $ZELLIJ ]]; then
+    cd "$selected_path" || exit
+    zellij attach "$session_name" -c
+    exit 0
+fi
+
+# If inside Zellij, open a new pane in the selected directory
+zellij action new-pane
+zellij action write-chars "cd '$selected_path'"
+zellij action write 10
+

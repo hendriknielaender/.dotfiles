@@ -24,6 +24,9 @@ alias ls="ls --color -la -h"
 alias grep="grep -n --color"
 alias vi="nvim"
 alias colorscheme="~/bin/colorscheme"
+alias zs="~/bin/zellij-sessionizer"
+
+bindkey -s ^f "zs"
 
 # TMUX Related Aliases
 TMUX_CONFIG="~/.config/tmux/.tmux.conf"
