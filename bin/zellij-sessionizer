@@ -40,7 +40,7 @@ if [[ -z $ZELLIJ ]]; then
 fi
 
 # If inside Zellij, open a new pane in the selected directory
-zellij action new-pane
+zellij action new-tab
 zellij action write-chars "cd '$selected_path'"
 zellij action write 10
 
