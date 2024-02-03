@@ -213,25 +213,25 @@ pane_frames false
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
 themes {
-	dracula {
-		fg 248 248 242
-			bg 40 42 54
-			red 255 85 85
-			green 80 250 123
-			yellow 241 250 140
-			blue 98 114 164
-			magenta 255 121 198
-			orange 255 184 108
-			cyan 139 233 253
-			black 0 0 0
-			white 255 255 255
+	rose-pine {
+		bg "#403d52"
+		fg "#e0def4"
+		red "#eb6f92"
+		green "#31748f"
+		blue "#9ccfd8"
+		yellow "#f6c177"
+		magenta "#c4a7e7"
+		orange "#fe640b"
+		cyan "#ebbcba"
+		black "#26233a"
+		white "#e0def4"
 	}
 }
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-// theme "default"
+theme "rose-pine"
 
 // The name of the default layout to load on startup
 // Default: "default"
