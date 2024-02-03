@@ -226,6 +226,32 @@ themes {
 		black "#26233a"
 		white "#e0def4"
 	}
+    gruvbox-dark {
+ 		fg "#D5C4A1"
+ 		bg "#282828"
+ 		black "#3C3836"
+ 		red "#CC241D"
+ 		green "#98971A"
+ 		yellow "#D79921"
+ 		blue "#3C8588"
+ 		magenta "#B16286"
+ 		cyan "#689D6A"
+ 		white "#FBF1C7"
+ 		orange "#D65D0E"
+ 	}
+    tokyo-night {
+        fg 169 177 214
+        bg 26 27 38
+        black 56 62 90
+        red 249 51 87
+        green 158 206 106
+        yellow 224 175 104
+        blue 122 162 247
+        magenta 187 154 247
+        cyan 42 195 222
+        white 192 202 245
+        orange 255 158 100
+    }
 }
 
 // Choose the theme that is specified in the themes section.
