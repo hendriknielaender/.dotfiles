@@ -12,20 +12,20 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local actions = require("telescope.actions")
+-- local actions = require("telescope.actions")
 local plugins = {
   {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+	  'nvim-telescope/telescope.nvim', tag = '0.1.5',
 	  dependencies = { {'nvim-lua/plenary.nvim'} },
       defaults = {
         path_display = { "truncate " },
-        mappings = {
-          i = {
-            ["<C-k>"] = actions.move_selection_previous, -- move to prev result
-            ["<C-j>"] = actions.move_selection_next, -- move to next result
-            ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
-          },
-        },
+        -- mappings = {
+        --   i = {
+        --     ["<C-k>"] = actions.move_selection_previous, -- move to prev result
+        --     ["<C-j>"] = actions.move_selection_next, -- move to next result
+        --     ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+        --   },
+        -- },
       },
   },
   -- Themes
