@@ -46,7 +46,7 @@ test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
 # Zig development
 # export PATH=$PATH:~/zig
-export PATH="$HOME/.zvm/current:$PATH"
+export PATH="$HOME/.zm/current:$PATH"
 
 # starship.rs
 export STARSHIP_CONFIG="~/.config/starship/starship.toml"
