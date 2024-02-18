@@ -15,9 +15,9 @@ fi
 # Function to find a directory using either fd or find
 find_directory() {
     if [ -x "$(command -v fd)" ]; then
-        fd . "${paths[@]}" --min-depth 1 --max-depth 2 --type d | fzf
+        fd . "${paths[@]}" --min-depth 1 --max-depth 1 --type d | fzf
     else
-        find "${paths[@]}" -mindepth 1 -maxdepth 2 -type d | fzf
+        find "${paths[@]}" -mindepth 1 -maxdepth 1 -type d | fzf
     fi
 }
 

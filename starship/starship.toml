@@ -2,7 +2,7 @@
 add_newline = false
 # A minimal left prompt
 format = """$directory$character"""
-palette = "catppuccin_mocha"
+# palette = "catppuccin_mocha"
 # move the rest of the prompt to the right
 right_format = """$all"""
 
@@ -19,6 +19,7 @@ right_format = """$all"""
 format = 'on [$symbol($profile )(\($region\) )]($style)'
 style = 'bold blue'
 symbol = "  "
+disabled = true
 
 [golang]
 format = '[ $version](bold cyan) '
@@ -26,9 +27,3 @@ format = '[ $version](bold cyan) '
 [zig]
 symbol = '⚡️ '
 
-[kubernetes]
-symbol = '☸'
-disabled = false
-detect_files = ['k8s', 'Dockerfile']
-detect_extensions = ['yaml']
-format = '[$symbol$context( \($namespace\))]($style) '
