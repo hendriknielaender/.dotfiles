@@ -18,7 +18,7 @@ stow --target ~/.config .
 |Shell:               |[zsh](https://www.zsh.org/) + [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)|
 |Editor:              |[neovim](https://github.com/neovim/neovim)                                 |
 |Terminal:            |[alacritty](https://github.com/alacritty/alacritty)                        |
-|Terminal-Multiplexer:|[tmux](https://github.com/tmux/tmux)                                       |
+|Terminal-Multiplexer:|[zellij](https://github.com/zellij-org/zellij)                             |
 
 **Optional**, but highly recommended:
 
