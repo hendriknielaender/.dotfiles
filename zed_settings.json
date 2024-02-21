@@ -1,0 +1,62 @@
+{
+  "show_copilot_suggestions": false,
+  "languages": {
+    "Plain Text": {
+      "show_copilot_suggestions": false
+    }
+  },
+  "assistant": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  //"soft_wrap": "preferred_line_length",
+  "vim_mode": true,
+  "cursor_blink": false,
+  "scrollbar": {
+    "show": "never"
+  },
+  "base_keymap": "VSCode",
+  "theme": "Gruvbox Dark Hard",
+  "ui_font_size": 16,
+  "buffer_font_size": 13,
+  "buffer_line_height": {
+    "custom": 1.25
+  },
+  "terminal": {
+    "dock": "bottom",
+    "blinking": "on",
+    "font_size": 13,
+    "line_height": {
+      "custom": 1.25
+    }
+  },
+  "inlay_hints": {
+    "enabled": false
+  },
+  "experimental.theme_overrides": {
+    // "editor.background": "#1D2021",
+    // "editor.gutter.background": "#1D2021",
+    // "terminal.background": "#1D2021",
+    // "toolbar.background": "#1D2021",
+    // "panel.background": "#1D2021",
+    // "tab.active_background": "#1D2021"
+  },
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "usePlaceholders": true,
+        "hints": {
+          "assignVariableTypes": true,
+          "compositeLiteralFields": true,
+          "compositeLiteralTypes": true,
+          "constantValues": true,
+          "functionTypeParameters": true,
+          "parameterNames": true,
+          "rangeVariableTypes": true
+        }
+      }
+    }
+  }
+}
