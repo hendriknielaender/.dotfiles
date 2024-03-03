@@ -25,6 +25,7 @@ stow --target ~/.config .
 * [fzf](https://github.com/junegunn/fzf)
 * [ripgrep](https://github.com/BurntSushi/ripgrep)
 * [jq](https://github.com/stedolan/jq)
+* [nvim kickstarter](https://github.com/nvim-lua/kickstart.nvim)
 
 ## Themes
 
