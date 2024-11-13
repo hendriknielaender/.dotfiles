@@ -17,7 +17,7 @@ stow --target ~/.config .
 |---------------------|---------------------------------------------------------------------------|
 |Shell:               |[zsh](https://www.zsh.org/) + [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)|
 |Editor:              |[neovim](https://github.com/neovim/neovim)                                 |
-|Terminal:            |[alacritty](https://github.com/alacritty/alacritty)                        |
+|Terminal:            |ghostty                     |
 |Terminal-Multiplexer:|[zellij](https://github.com/zellij-org/zellij)                             |
 
 **Optional**, but highly recommended:
@@ -43,12 +43,4 @@ To swich the theme in a more simple way, we are using a simple bash script by ju
 colorscheme tokyonight
 ```
 
-## Features
-
-- `lsp-zero` manage [language servers](https://github.com/VonHeikemen/lsp-zero.nvim)
-- `telescope.nvim` a highly extendable [fuzzy finder](https://github.com/nvim-telescope/telescope.nvim)
-- `nvim-treesitter` [parsing library](https://github.com/nvim-treesitter/nvim-treesitter)
-- `theprimeagen/harpoon` [buffer navigation](https://github.com/ThePrimeagen/harpoon)
-- `undotree` visualizes the [undo history](https://github.com/mbbill/undotree)
-- `lualine.nvim` fast and easy to configure Neovim [statusline](https://github.com/nvim-lualine/lualine.nvim)
 
