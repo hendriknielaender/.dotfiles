@@ -98,6 +98,7 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+vim.g.transparent_background = 1
 -- [[ Basic Autocommands ]]
 --  See :help lua-guide-autocommands
 
@@ -634,38 +635,43 @@ require('lazy').setup {
     end,
   },
 
-  { -- You can easily change to a different colorscheme.
-    -- Change the name of the colorscheme plugin below, and then
-    -- change the command in the config to whatever the name of that colorscheme is
-    --
-    -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`
-    'rose-pine/neovim',
-    name = 'rose-pine',
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
-    config = function()
-      require('rose-pine').setup {
-        styles = {
-          transparency = true,
-        },
-        highlight_groups = {
-          TelescopeBorder = { fg = 'highlight_high', bg = 'none' },
-          TelescopeNormal = { bg = 'none' },
-          TelescopePromptNormal = { bg = 'none' },
-          TelescopeResultsNormal = { fg = 'subtle', bg = 'none' },
-          TelescopeSelection = { fg = 'text', bg = 'base' },
-          TelescopeSelectionCaret = { fg = 'rose', bg = 'rose' },
-        },
-      }
-      -- Load the colorscheme here
-      vim.cmd.colorscheme 'rose-pine-moon'
-
-      -- You can configure highlights by doing something like
-      vim.cmd.hi 'Comment gui=none'
-      vim.cmd.hi 'Normal guibg=NONE ctermbg=NONE'
-    end,
+  -- { -- You can easily change to a different colorscheme.
+  --   -- Change the name of the colorscheme plugin below, and then
+  --   -- change the command in the config to whatever the name of that colorscheme is
+  --   --
+  --   -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`
+  --   'rose-pine/neovim',
+  --   name = 'rose-pine',
+  --   lazy = false, -- make sure we load this during startup if it is your main colorscheme
+  --   priority = 1000, -- make sure to load this before all the other start plugins
+  --   config = function()
+  --     require('rose-pine').setup {
+  --       styles = {
+  --         transparency = true,
+  --       },
+  --       highlight_groups = {
+  --         TelescopeBorder = { fg = 'highlight_high', bg = 'none' },
+  --         TelescopeNormal = { bg = 'none' },
+  --         TelescopePromptNormal = { bg = 'none' },
+  --         TelescopeResultsNormal = { fg = 'subtle', bg = 'none' },
+  --         TelescopeSelection = { fg = 'text', bg = 'base' },
+  --         TelescopeSelectionCaret = { fg = 'rose', bg = 'rose' },
+  --       },
+  --     }
+  --     -- Load the colorscheme here
+  --     vim.cmd.colorscheme 'rose-pine-moon'
+  --
+  --     -- You can configure highlights by doing something like
+  --     vim.cmd.hi 'Comment gui=none'
+  --     vim.cmd.hi 'Normal guibg=NONE ctermbg=NONE'
+  --   end,
+  -- },
+  --
+  {
+    'hendriknielaender/stardust.nvim',
+    name = 'stardust',
+    priority = 1000,
   },
-
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
@@ -743,6 +749,9 @@ require('lazy').setup {
   --    For additional information see: :help lazy.nvim-lazy.nvim-structuring-your-plugins
   -- { import = 'custom.plugins' },
 }
+
+vim.o.background = 'dark' -- or "light" for light mode
+vim.cmd [[colorscheme stardust]]
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

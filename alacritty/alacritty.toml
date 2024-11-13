@@ -30,7 +30,7 @@ foreground = "0xa9b1d6"
 TERM = "xterm-256color"
 
 [font]
-size = 22
+size = 16
 
 [font.normal]
 family = "Hack Nerd Font"
