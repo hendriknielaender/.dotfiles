@@ -48,6 +48,8 @@ test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 # export PATH=$PATH:~/zig
 export PATH="$HOME/.zm/current:$PATH"
 
+eval "$(zellij setup --generate-auto-start zsh)"
+
 # starship.rs
 export STARSHIP_CONFIG="~/.config/starship/starship.toml"
 eval "$(starship init zsh)"
