@@ -17,7 +17,7 @@ stow --target ~/.config .
 |---------------------|---------------------------------------------------------------------------|
 |Shell:               |[zsh](https://www.zsh.org/) + [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)|
 |Editor:              |[neovim](https://github.com/neovim/neovim)                                 |
-|Terminal:            |ghostty                     |
+|Terminal:            |[ghostty](https://github.com/ghostty-org/ghostty)                          |
 |Terminal-Multiplexer:|[zellij](https://github.com/zellij-org/zellij)                             |
 
 **Optional**, but highly recommended:
@@ -35,12 +35,5 @@ stow --target ~/.config .
 |[tokyonight](https://github.com/folke/tokyonight.nvim)   |<img src="tokyonight.png" alt="tokyonight theme" width="330" height="250" title="tokyonight theme">  |
 |[gruvbox](https://github.com/ellisonleao/gruvbox.nvim)   |<img src="gruvbox.png" alt="gruvbox theme" width="330" height="250" title="gruvbox theme">  |
 
-## Switch theme
-
-To swich the theme in a more simple way, we are using a simple bash script by just calling this alias.
-
-```shell
-colorscheme tokyonight
-```
 
 
