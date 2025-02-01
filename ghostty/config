@@ -7,8 +7,7 @@ font-size = 20
 
 mouse-hide-while-typing = true
 
-window-decoration = false
-macos-titlebar-style = hidden
+window-decoration = true
 
 background = 000000
 background-opacity = 0.2
