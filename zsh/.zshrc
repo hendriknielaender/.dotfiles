@@ -20,21 +20,8 @@ alias gb="git branch"
 alias gpl="git pull"
 alias gps="git push"
 
-alias ls="ls --color -la -h"
 alias grep="grep -n --color"
 alias vi="nvim"
-alias colorscheme="~/bin/colorscheme"
-alias zs="~/bin/zellij-sessionizer"
-
-bindkey -s ^f "zs"
-
-# TMUX Related Aliases
-TMUX_CONFIG="~/.config/tmux/.tmux.conf"
-
-alias                                 \
-  tn="tmux -u -f $TMUX_CONFIG new"    \
-  ta="tmux -u -f $TMUX_CONFIG attach" \
-  tt="nvim $TMUX_CONFIG"
 
 # Go development
 export GOPATH="${HOME}/.go"
@@ -45,11 +32,7 @@ test -d "${GOPATH}" || mkdir "${GOPATH}"
 test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
 # Zig development
-# export PATH=$PATH:~/zig
 export PATH="$HOME/.zm/current:$PATH"
 
-eval "$(zellij setup --generate-auto-start zsh)"
-
 # starship.rs
-export STARSHIP_CONFIG="~/.config/starship/starship.toml"
 eval "$(starship init zsh)"
