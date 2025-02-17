@@ -1,12 +1,13 @@
 # format = '$all$directory$character'
-add_newline = false
+add_newline = true
 # A minimal left prompt
-format = """$directory$character"""
-# palette = "catppuccin_mocha"
-# move the rest of the prompt to the right
-right_format = """$all"""
+# format = """$directory$character"""
+# right_format = """$all"""
 
-# [directory]
+[directory]
+format = '[$path]($style)[$read_only]($read_only_style) '
+style = 'bold fg:#f7a41d' 
+
 # truncation_length = 2
 # truncation_symbol = '…/'
 # disabled = true
@@ -14,12 +15,51 @@ right_format = """$all"""
 [directory.substitutions]
 '~/tests/starship-custom' = 'work-project'
 
+[terminal_colors]
+foreground = "#dcdccc"
 
-[aws]
-format = 'on [$symbol($profile )(\($region\) )]($style)'
-style = 'bold blue'
-symbol = "  "
-disabled = true
+###############################################################################
+# Character (the "prompt symbol")
+###############################################################################
+[character]
+# Success symbol color is a subtle green (#acd2ac)
+success_symbol = "[➜](bold fg:#acd2ac)"
+# Error symbol color is bright red (#F44747)
+error_symbol   = "[➜](bold fg:#F44747)"
+# Symbol when in vi command mode, here using your light yellow (#fcca7c)
+vicmd_symbol   = "[➜](bold fg:#fcca7c)"
+
+###############################################################################
+# Hostname
+###############################################################################
+[hostname]
+# Show hostname even when not SSH’d
+ssh_only = true
+format   = "[$hostname](bold fg:#f7a41d) "  # Using your orange/yellow tone
+
+###############################################################################
+# Username
+###############################################################################
+[username]
+format       = "[$user](bold fg:#dcdccc) "
+show_always  = false
+
+
+###############################################################################
+# Git Branch
+###############################################################################
+[git_branch]
+symbol = " "                  # A common Git branch symbol
+style  = "bold fg:#fcca7c"     # Your light yellow
+
+
+###############################################################################
+# Language
+###############################################################################
+[nodejs]
+symbol = " "
+style  = "bold fg:#acd2ac"  # Light green for Node
+format = "via [$symbol($version )](bold fg:#acd2ac)"
 
 [golang]
 format = '[ $version](bold cyan) '
@@ -27,3 +67,22 @@ format = '[ $version](bold cyan) '
 [zig]
 symbol = '⚡️ '
 
+###############################################################################
+# Package Version (shows up in directories with a package file)
+###############################################################################
+[package]
+format = "is [$version](bold fg:#fcca7c) "
+
+###############################################################################
+# Time (optional)
+###############################################################################
+[time]
+time_format = "%H:%M:%S"
+style       = "bold fg:#f44747"
+format      = "at [$time]($style) "
+
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = 'bold blue'
+symbol = "  "
+disabled = true

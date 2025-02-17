@@ -1,0 +1,31 @@
+# ------------------------------
+# stardust ghostty theme
+# Save this as, for example, "~/.config/ghostty/themes/stardust"
+# Then set in your Ghostty config: theme = stardust
+# ------------------------------
+palette = 0=#18181b
+palette = 1=#F44747
+palette = 2=#fcca7c
+palette = 3=#f7a41d
+palette = 4=#acd2ac
+palette = 5=#fcca7c
+palette = 6=#4EC9B0
+palette = 7=#dcdccc
+palette = 8=#2b2b2b
+palette = 9=#D16969
+palette = 10=#ffc1c1
+palette = 11=#fcca7c
+palette = 12=#fcca7c
+palette = 13=#C586C0
+palette = 14=#4EC9B0
+palette = 15=#ffffff
+
+background = #18181b
+foreground = #dcdccc
+
+cursor-color = #8faf9f
+cursor-text  = #000d18
+
+selection-background = #5e81ac
+selection-foreground = #dcdccc
+
