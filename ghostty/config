@@ -1,5 +1,7 @@
 term = xterm-256color
-theme = catppuccin-mocha
+theme = stardust
+
+macos-icon = xray
 
 font-family = "FiraMono Nerd Font"
 font-thicken = true
