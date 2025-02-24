@@ -18,7 +18,6 @@ stow --target ~/.config .
 |Shell:               |[zsh](https://www.zsh.org/) + [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)|
 |Editor:              |[neovim](https://github.com/neovim/neovim)                                 |
 |Terminal:            |[ghostty](https://github.com/ghostty-org/ghostty)                          |
-|Terminal-Multiplexer:|[zellij](https://github.com/zellij-org/zellij)                             |
 
 **Optional**, but highly recommended:
 
@@ -29,11 +28,12 @@ stow --target ~/.config .
 
 ## Themes
 
-|                                                         |                                                 |
-|---------------------------------------------------------|-------------------------------------------------|
-|[rose-pine](https://github.com/rose-pine/neovim)         | <img src="rose-pine.png" alt="rose-pine theme" width="330" height="250" title="rose-pine theme">  |
-|[tokyonight](https://github.com/folke/tokyonight.nvim)   |<img src="tokyonight.png" alt="tokyonight theme" width="330" height="250" title="tokyonight theme">  |
-|[gruvbox](https://github.com/ellisonleao/gruvbox.nvim)   |<img src="gruvbox.png" alt="gruvbox theme" width="330" height="250" title="gruvbox theme">  |
+|                                                                       |                                                 |
+|-----------------------------------------------------------------------|-------------------------------------------------|
+|[stardust](https://github.com/hendriknielaender/stardust.nvim)         |<img src="https://github.com/hendriknielaender/stardust.nvim/blob/main/stardust.png" alt="stardust theme" width="330" height="250" title="rose-pine theme">  |
+|[rose-pine](https://github.com/rose-pine/neovim)                       |<img src="rose-pine.png" alt="rose-pine theme" width="330" height="250" title="rose-pine theme">  |
+|[tokyonight](https://github.com/folke/tokyonight.nvim)                 |<img src="tokyonight.png" alt="tokyonight theme" width="330" height="250" title="tokyonight theme">  |
+|[gruvbox](https://github.com/ellisonleao/gruvbox.nvim)                 |<img src="gruvbox.png" alt="gruvbox theme" width="330" height="250" title="gruvbox theme">  |
 
 
 
