@@ -2,6 +2,7 @@ term = xterm-256color
 theme = stardust
 
 macos-icon = xray
+macos-titlebar-style = tabs
 
 font-family = "FiraMono Nerd Font"
 font-thicken = true
@@ -10,9 +11,23 @@ font-size = 20
 mouse-hide-while-typing = true
 
 window-decoration = true
+window-save-state = always
 
 background = 000000
 background-opacity = 0.2
 background-blur-radius = 20
 
+# keybinds
 keybind = global:cmd+s=toggle_quick_terminal
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+
+keybind = cmd+h=previous_tab
+keybind = cmd+l=next_tab
+
+keybind = super+ctrl+h=resize_split:left,10
+keybind = super+ctrl+j=resize_split:down,10
+keybind = super+ctrl+k=resize_split:up,10
+keybind = super+ctrl+l=resize_split:right,10
