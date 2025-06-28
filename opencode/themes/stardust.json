@@ -1,0 +1,231 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "stardust_bg": "#18181b",
+    "stardust_dark": "#2b2b2b",
+    "stardust_popup": "#2e3330",
+    "stardust_dark_gray": "#33332f",
+    "stardust_context": "#606060",
+    "stardust_gray": "#808080",
+    "stardust_light_gray": "#8f8f8f",
+    "stardust_fg": "#dcdccc",
+    "stardust_accent": "#ffa263",
+    "stardust_blue": "#569CD6",
+    "stardust_light_blue": "#9CDCFE",
+    "stardust_cyan": "#4EC9B0",
+    "stardust_green": "#6A9955",
+    "stardust_light_green": "#acd2ac",
+    "stardust_red": "#F44747",
+    "stardust_light_red": "#D16969",
+    "stardust_orange": "#ffa263",
+    "stardust_yellow": "#f7a41d",
+    "stardust_light_yellow": "#fcca7c",
+    "stardust_purple": "#C586C0",
+    "stardust_magenta": "#D16D9E",
+    "stardust_string": "#ffc1c1",
+    "stardust_func": "#ffd787",
+    "stardust_number": "#8cd0d3"
+  },
+  "theme": {
+    "primary": {
+      "dark": "stardust_yellow",
+      "light": "stardust_yellow"
+    },
+    "secondary": {
+      "dark": "stardust_cyan",
+      "light": "stardust_cyan"
+    },
+    "accent": {
+      "dark": "stardust_accent",
+      "light": "stardust_accent"
+    },
+    "error": {
+      "dark": "stardust_red",
+      "light": "stardust_red"
+    },
+    "warning": {
+      "dark": "stardust_orange",
+      "light": "stardust_orange"
+    },
+    "success": {
+      "dark": "stardust_green",
+      "light": "stardust_green"
+    },
+    "info": {
+      "dark": "stardust_light_blue",
+      "light": "stardust_light_blue"
+    },
+    "text": {
+      "dark": "stardust_fg",
+      "light": "stardust_dark"
+    },
+    "textMuted": {
+      "dark": "stardust_light_gray",
+      "light": "stardust_context"
+    },
+    "background": {
+      "dark": "none",
+      "light": "none"
+    },
+    "backgroundPanel": {
+      "dark": "stardust_dark",
+      "light": "stardust_light_gray"
+    },
+    "backgroundElement": {
+      "dark": "stardust_popup",
+      "light": "stardust_gray"
+    },
+    "border": {
+      "dark": "stardust_dark_gray",
+      "light": "stardust_context"
+    },
+    "borderActive": {
+      "dark": "stardust_accent",
+      "light": "stardust_accent"
+    },
+    "borderSubtle": {
+      "dark": "stardust_context",
+      "light": "stardust_light_gray"
+    },
+    "diffAdded": {
+      "dark": "stardust_green",
+      "light": "stardust_green"
+    },
+    "diffRemoved": {
+      "dark": "stardust_red",
+      "light": "stardust_red"
+    },
+    "diffContext": {
+      "dark": "stardust_context",
+      "light": "stardust_context"
+    },
+    "diffHunkHeader": {
+      "dark": "stardust_light_gray",
+      "light": "stardust_light_gray"
+    },
+    "diffHighlightAdded": {
+      "dark": "stardust_light_green",
+      "light": "stardust_light_green"
+    },
+    "diffHighlightRemoved": {
+      "dark": "stardust_light_red",
+      "light": "stardust_light_red"
+    },
+    "diffAddedBg": {
+      "dark": "#2e3330",
+      "light": "#acd2ac"
+    },
+    "diffRemovedBg": {
+      "dark": "#2e3330",
+      "light": "#D16969"
+    },
+    "diffContextBg": {
+      "dark": "stardust_dark",
+      "light": "stardust_light_gray"
+    },
+    "diffLineNumber": {
+      "dark": "stardust_context",
+      "light": "stardust_context"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#2e3330",
+      "light": "#acd2ac"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#2e3330",
+      "light": "#D16969"
+    },
+    "markdownText": {
+      "dark": "stardust_fg",
+      "light": "stardust_dark"
+    },
+    "markdownHeading": {
+      "dark": "stardust_blue",
+      "light": "stardust_blue"
+    },
+    "markdownLink": {
+      "dark": "stardust_cyan",
+      "light": "stardust_cyan"
+    },
+    "markdownLinkText": {
+      "dark": "stardust_light_blue",
+      "light": "stardust_light_blue"
+    },
+    "markdownCode": {
+      "dark": "stardust_string",
+      "light": "stardust_string"
+    },
+    "markdownBlockQuote": {
+      "dark": "stardust_light_gray",
+      "light": "stardust_context"
+    },
+    "markdownEmph": {
+      "dark": "stardust_yellow",
+      "light": "stardust_yellow"
+    },
+    "markdownStrong": {
+      "dark": "stardust_accent",
+      "light": "stardust_accent"
+    },
+    "markdownHorizontalRule": {
+      "dark": "stardust_context",
+      "light": "stardust_context"
+    },
+    "markdownListItem": {
+      "dark": "stardust_cyan",
+      "light": "stardust_cyan"
+    },
+    "markdownListEnumeration": {
+      "dark": "stardust_purple",
+      "light": "stardust_purple"
+    },
+    "markdownImage": {
+      "dark": "stardust_magenta",
+      "light": "stardust_magenta"
+    },
+    "markdownImageText": {
+      "dark": "stardust_light_blue",
+      "light": "stardust_light_blue"
+    },
+    "markdownCodeBlock": {
+      "dark": "stardust_fg",
+      "light": "stardust_dark"
+    },
+    "syntaxComment": {
+      "dark": "stardust_green",
+      "light": "stardust_green"
+    },
+    "syntaxKeyword": {
+      "dark": "stardust_blue",
+      "light": "stardust_blue"
+    },
+    "syntaxFunction": {
+      "dark": "stardust_func",
+      "light": "stardust_func"
+    },
+    "syntaxVariable": {
+      "dark": "stardust_fg",
+      "light": "stardust_dark"
+    },
+    "syntaxString": {
+      "dark": "stardust_string",
+      "light": "stardust_string"
+    },
+    "syntaxNumber": {
+      "dark": "stardust_number",
+      "light": "stardust_number"
+    },
+    "syntaxType": {
+      "dark": "stardust_accent",
+      "light": "stardust_accent"
+    },
+    "syntaxOperator": {
+      "dark": "stardust_cyan",
+      "light": "stardust_cyan"
+    },
+    "syntaxPunctuation": {
+      "dark": "stardust_light_gray",
+      "light": "stardust_context"
+    }
+  }
+}
