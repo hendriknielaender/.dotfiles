@@ -1,2 +1,5 @@
 .DS_STORE
+.opencode
 packer_compiled.lua
+
+*.bak
