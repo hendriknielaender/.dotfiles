@@ -15,9 +15,6 @@ style = 'bold fg:#f7a41d'
 [directory.substitutions]
 '~/tests/starship-custom' = 'work-project'
 
-[terminal_colors]
-foreground = "#dcdccc"
-
 ###############################################################################
 # Character (the "prompt symbol")
 ###############################################################################
