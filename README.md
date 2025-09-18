@@ -1,9 +1,20 @@
-# .dotfiles
+<p align="center">
+<pre>
+   ██████╗  ██████╗ ████████╗███████╗██╗██╗     ███████╗███████╗
+   ██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝██║██║     ██╔════╝██╔════╝
+   ██║  ██║██║   ██║   ██║   █████╗  ██║██║     █████╗  ███████╗
+   ██║  ██║██║   ██║   ██║   ██╔══╝  ██║██║     ██╔══╝  ╚════██║
+██╗██████╔╝╚██████╔╝   ██║   ██║     ██║███████╗███████╗███████║
+╚═╝╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
+</pre>
+</p>
+<hr />
+                                                                
 
 This repository contains my personal dotfiles, including preconfigured settings for Neovim, tailored specifically for TypeScript, Rust, Zig, Go development. It includes a curated selection of plugins, key mappings, and customizations to enhance productivity and streamline coding workflows.
 
-### Vim re-maps
-[CHEATSHEET.md](CHEATSHEET.md)
+### Keybindings
+[Omarchy](https://github.com/basecamp/omarchy)
 
 ### Getting started
 ```shell
